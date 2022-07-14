@@ -1,9 +1,10 @@
 # Terraform Settings Block
 terraform {
+  required_version = "~> 1.2"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.21"
+      version = "~> 4.22"
     }
   }
 }
@@ -11,5 +12,5 @@ terraform {
 # Provider Block
 provider "aws" {
   profile = "default"
-  region  = "us-east-1"
+  region  = var.aws_region
 }
