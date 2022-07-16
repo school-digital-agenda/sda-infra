@@ -3,7 +3,7 @@ module "sda-vpc" {
   version = "3.14.2"
 
   # VPC Basic Details
-  name = "vpc-prod"
+  name = "${local.name}-vpc"
   cidr = "20.10.0.0/16"
 
   azs                 = ["us-east-1a", "us-east-1b"]
@@ -36,12 +36,12 @@ module "sda-vpc" {
   }
 
   tags = {
-    Owner = "sda"
-    Environment = "prod"
+    Owner = local.owners
+    Environment = local.environment
   }
 
   vpc_tags = {
-    Name = "vpc-prod"
+    Name = "${local.name}-vpc"
   }
 
 
