@@ -10,7 +10,7 @@ resource "aws_db_instance" "sda_db" {
   engine_version         = "14.1"
 
   port                   = 5432
-  username               = "sda_master"
+  username               = "sda_root"
   password               = var.db_password
 
   multi_az               = true
