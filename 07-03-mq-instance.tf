@@ -1,5 +1,5 @@
 resource "aws_mq_broker" "sda_mq" {
-  broker_name = "${local.name}-"
+  broker_name = "${local.name}-sda-mq"
 
   engine_type        = "RabbitMQ"
   engine_version     = "3.9.16"

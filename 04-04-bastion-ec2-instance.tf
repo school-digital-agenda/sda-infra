@@ -4,7 +4,7 @@ module "ec2_public" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 4.0"
 
-  name = "${local.name}-BastionHost"
+  name = "${local.name}-ec2-BastionHost"
   ami                    = data.aws_ami.amzlinux2.id
   instance_type          = var.instance_type
   key_name               = var.instance_keypair
