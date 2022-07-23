@@ -1,4 +1,4 @@
-resource "aws_db_instance" "sda_db" {
+/*resource "aws_db_instance" "sda_db" {
   identifier = local.name
 
   instance_class         = "db.t3.micro"
@@ -23,3 +23,4 @@ resource "aws_db_instance" "sda_db" {
 
   tags = local.common_tags
 }
+*/

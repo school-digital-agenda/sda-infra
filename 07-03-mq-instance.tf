@@ -1,3 +1,4 @@
+/*
 resource "aws_mq_broker" "sda_mq" {
   broker_name = "${local.name}-sda-mq"
 
@@ -13,3 +14,4 @@ resource "aws_mq_broker" "sda_mq" {
     password = var.mq_password
   }
 }
+*/

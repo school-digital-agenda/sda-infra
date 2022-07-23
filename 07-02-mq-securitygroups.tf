@@ -1,4 +1,4 @@
-module "mq_security_group" {
+/*module "mq_security_group" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "~> 4.9"
 
@@ -26,3 +26,4 @@ module "mq_security_group" {
 
   tags = local.common_tags
 }
+*/

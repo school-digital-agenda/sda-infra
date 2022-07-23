@@ -1,4 +1,4 @@
-output "rds_hostname" {
+/*output "rds_hostname" {
   description = "RDS instance hostname"
   value       = aws_db_instance.sda_db.address
   sensitive   = true
@@ -15,3 +15,4 @@ output "rds_username" {
   value       = aws_db_instance.sda_db.username
   sensitive   = true
 }
+*/

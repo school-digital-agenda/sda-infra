@@ -42,7 +42,7 @@ Principais outputs para tomar nota após a execução:
 
 ``` bash
 # Configurar contexto (é necessário configurar o AWS CLI na máquina)
-aws eks --region us-east-1 update-kubeconfig --name sda-prod-eks-sda1
+aws eks --region us-east-1 update-kubeconfig --name sda-prod-eks-sda1-cluster
 
 # Listar nodes
 kubectl get nodes

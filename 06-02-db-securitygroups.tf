@@ -1,4 +1,4 @@
-module "security_group" {
+/*module "security_group" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "~> 4.9"
 
@@ -19,3 +19,4 @@ module "security_group" {
 
   tags = local.common_tags
 }
+*/
